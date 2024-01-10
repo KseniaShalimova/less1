@@ -11,3 +11,23 @@ while (i < n)
     i = i + 1;
 }
 Console.WriteLine(max);
+
+max = arr[0];
+for (int j = 0; j < n; j++) //j++ это j=j+1
+{
+    if (arr[j] > max)
+    {
+        max = arr[j];
+    }
+}
+Console.WriteLine(max);
+
+max = 0;
+foreach(int e in arr)
+{
+    if (e > max)
+    {
+        max = e;
+    }
+}
+Console.WriteLine(max);
